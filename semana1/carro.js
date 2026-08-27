@@ -79,12 +79,12 @@ function addCarCircle(centerX, centerY, radius, segments, color) {
 addCarRect(-0.88, -0.35, 0.85, 0.05, [0.8, 0.1, 0.1]);
 
 // Parte superior (cabine)
-addCarTriangle([-0.45, 0.05], [0.5, 0.05], [0.25, 0.45], [0.9, 0.2, 0.2]);
-addCarTriangle([-0.45, 0.05], [0.25, 0.45], [-0.15, 0.45], [0.9, 0.2, 0.2]);
+addCarTriangle([-0.15, 0.05], [0.5, 0.05], [0.25, 0.45], [0.9, 0.2, 0.2]);
+addCarTriangle([-0.15, 0.05], [0.25, 0.45], [-0.15, 0.45], [0.9, 0.2, 0.2]);
 
 // Janelas
-addCarTriangle([0.0, 0.1], [0.32, 0.1], [0.18, 0.34], [0.6, 0.85, 1.0]);
-addCarTriangle([0.0, 0.1], [0.18, 0.34], [0.00, 0.34], [0.6, 0.85, 1.0]);
+addCarTriangle([0.0, 0.1], [0.36, 0.1], [0.2, 0.38], [0.6, 0.85, 1.0]);
+addCarTriangle([0.0, 0.1], [0.2, 0.38], [0.00, 0.38], [0.6, 0.85, 1.0]);
 
 // Parachoques
 addCarRect(-0.92, -0.3, -0.85, -0.08, [0.2, 0.2, 0.25]);
@@ -115,7 +115,7 @@ const carColorLocation = carGl.getAttribLocation(carProgram, "aColor");
 
 carGl.useProgram(carProgram);
 carGl.viewport(0, 0, carCanvas.width, carCanvas.height);
-carGl.clearColor(0.6, 0.9, 0.3, 1.0);
+carGl.clearColor(0.4, 0.5, 0.9, 1.0);
 carGl.clear(carGl.COLOR_BUFFER_BIT);
 
 carGl.bindBuffer(carGl.ARRAY_BUFFER, carVertexBuffer);
