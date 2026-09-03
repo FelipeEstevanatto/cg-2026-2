@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Computação Gráfica - Semana 2</title>
+</head>
+
+<body class="flex justify-center bg-gray-200">
+    <div class="bg-white p-2 sm:p-5 rounded mt-4 sm:min-w-xl text-center relative">
+        <h1 class="text-3xl font-bold mb-4 mt-8">Computação Gráfica Semana 2</h1>
+        <h2 class="text-xl">Algoritmo de Bresenham</h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-2 mt-8">
+            <div class="text-center">
+                <h3 class="text-xl font-semibold mb-1">Exercicio 1</h3>
+                <p class="text-sm text-gray-600 mb-2">Clique 2x para reta. Teclas 0-9 mudam a cor.</p>
+                <canvas id="glCanvas1" width="500" height="500" class="rounded-md mx-auto bg-black"></canvas>
+            </div>
+            <div>
+                <h3 class="text-xl font-semibold mb-1">Exercicio 2</h3>
+                <p class="text-sm text-gray-600 mb-2">R: reta (2 cliques) | T: triangulo (3 cliques) | 0-9: cor</p>
+                <canvas id="glCanvas2" width="500" height="500" class="rounded-md mx-auto bg-black"></canvas>
+            </div>
+        </div>
+
+        <a href="../index.html" class="absolute top-2 right-2 text-xl underline hover:text-blue-500">Voltar</a>
+    </div>
+
+    <script src="exercicio1.js"></script>
+    <script src="exercicio2.js"></script>
+</body>
+
+</html>
